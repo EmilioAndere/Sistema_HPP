@@ -7,7 +7,7 @@
 *   PHP
 *   [Twig](https://twig.symfony.com/) - Template Engine
 
-## Desarrollo
+## Instalación ⚙️
 
 _Colocar la copia del proyecto dentro del servidor local XAMPP_
 ```
@@ -18,3 +18,8 @@ _Correr el comando:_
 ```
 composer update
 ``` 
+
+## Autores ✒️
+
+* **Emilio Andere** - Back-End - [Softher](https://github.com/EmilioAndere)
+* **Lizeth Rodriguez** - Front-End
