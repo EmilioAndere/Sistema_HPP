@@ -1,2 +1,4 @@
 
-# Sistema de Gestion del Area de Soporte Tecnico
+# Sistema de Gestion del Area de Soporte Tecnico :computer:
+
+## Comenzando 
