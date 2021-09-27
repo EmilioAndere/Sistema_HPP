@@ -2,28 +2,15 @@
 
 namespace App\Controllers;
 
-define("VIEWS", __DIR__."/../../views/marca.php");
-
 use App\Models\Marca;
-use Twig\Loader\FilesystemLoader;
-use Twig\Environment;
+use Config\Controller;
 
-class MarcaController
+class MarcaController extends Controller
 {
-
-    private $template;
-
-    public function __construct()
-    {
-        $loader = new FilesystemLoader("../views");
-        $this->template = new Environment($loader);
-    }
 
     public function index(){
         $marcas = Marca::all();
-        // var_dump($marcas);
-        $name = "Emilio";
-        echo $this->template->render('marca.html', compact('name', 'marcas'));
+        echo $this->tmp->render('marca.html', compact('marcas'));
     }
 
     public function find($args){

@@ -13,9 +13,9 @@ class Conexion
     public function __construct()
     {
         $this->connection = new PDO(
-            "mysql:host=localhost;dbname=dev_hpp",
-            "root",
-            ""
+            "mysql:host={$_ENV['DB_HOST']};dbname={$_ENV['DB_NAME']}",
+            $_ENV['DB_USER'],
+            $_ENV['DB_PASS']
         );
     }
 
